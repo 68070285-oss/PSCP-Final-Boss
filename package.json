@@ -1,0 +1,1 @@
+{"name":"webchat-week1","version":"1.0.0","description":"Simple real-time web chat (freshman level)","main":"server.js","scripts":{"start":"node server.js","dev":"node server.js"},"dependencies":{"express":"^4.21.1","socket.io":"^4.7.5","xss":"^1.0.15"}}

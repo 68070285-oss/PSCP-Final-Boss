@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>KmitlChat</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<div class="app">
+<header>
+<h1>GroupChat <span class="badge">Kmitl</span></h1>
+</header>
+
+
+<main id="messages"></main>
+
+
+<div id="typing"></div>
+
+
+<form id="form" autocomplete="off">
+<input id="input" placeholder="Type a message…" maxlength="500" />
+<button>Send</button>
+</form>
+</div>
+
+<script>
+  if (!localStorage.getItem('name')) {
+    window.location.href = "/welcome.html";
+  }
+</script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/client.js"></script>
+</body>
+</html>
