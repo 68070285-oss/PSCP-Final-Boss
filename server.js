@@ -8,8 +8,8 @@ const { Server } = require('socket.io');
 const io = new Server(http, { cors: { origin: '*' } });
 const xss = require('xss');
 
-const HOST = '127.0.0.1';
-const PORT = process.env.PORT || 3000;
+const HOST = '0.0.0.0';
+const PORT = process.env.PORT || 10000;
 const DATA_FILE = path.join(__dirname, 'messages.json');
 const SAVE_HISTORY = true;
 
